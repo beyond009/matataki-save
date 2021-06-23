@@ -4,7 +4,7 @@ description: ""
 keywords: null
 author: ddd009
 language: en
-timezone: ""
+timezone: Etc/GMT+8
 url: https://beyond009.github.io/matataki-save
 permalink: :title/
 permalink_defaults: null
