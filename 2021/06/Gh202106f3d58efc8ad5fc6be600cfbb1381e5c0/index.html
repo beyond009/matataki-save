@@ -20,27 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;beyond009.github.io&quot;,&quot;root&quot;:&quot;&#x2F;matataki-save&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;matataki-save&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}</script><script src="/matataki-save/js/config.js"></script>
-<meta name="description" content="test">
+<meta name="description" content="前置条件 git CMake 系统编译工具 （VS、GCC、Xcode） python 2.7.*  编译 Emscripten1234$ git clone https:&#x2F;&#x2F;github.com&#x2F;juj&#x2F;emsdk.git$ cd emsdk$ .&#x2F;emsdk install sdk-incoming-64bit binaryen-master-64bit$ .&#x2F;emsdk activate s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="https://beyond009.github.io/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/index.html">
+<meta property="og:title" content="Webassembly环境配置">
+<meta property="og:url" content="https://beyond009.github.io/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/index.html">
 <meta property="og:site_name" content="ddd009&#39;s blog">
-<meta property="og:description" content="test">
+<meta property="og:description" content="前置条件 git CMake 系统编译工具 （VS、GCC、Xcode） python 2.7.*  编译 Emscripten1234$ git clone https:&#x2F;&#x2F;github.com&#x2F;juj&#x2F;emsdk.git$ cd emsdk$ .&#x2F;emsdk install sdk-incoming-64bit binaryen-master-64bit$ .&#x2F;emsdk activate s">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-23T19:21:53.000Z">
+<meta property="article:published_time" content="2021-06-25T22:05:06.000Z">
 <meta property="article:modified_time" content="2021-06-25T06:05:23.802Z">
 <meta property="article:author" content="ddd009">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/">
+<link rel="canonical" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;beyond009.github.io&#x2F;matataki-save&#x2F;2021&#x2F;06&#x2F;Gh202106404a4bc96ec60e850d06328661f586b2&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;06&#x2F;Gh202106404a4bc96ec60e850d06328661f586b2&#x2F;&quot;,&quot;title&quot;:&quot;test&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;en&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;beyond009.github.io&#x2F;matataki-save&#x2F;2021&#x2F;06&#x2F;Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;06&#x2F;Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0&#x2F;&quot;,&quot;title&quot;:&quot;Webassembly环境配置&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>test | ddd009's blog</title>
+<title>Webassembly环境配置 | ddd009's blog</title>
   
 
 
@@ -94,7 +94,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -107,6 +107,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">前置条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91-Emscripten"><span class="nav-number">2.</span> <span class="nav-text">编译 Emscripten</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">测试</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -159,7 +160,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/">
+    <link itemprop="mainEntityOfPage" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/matataki-save/images/avatar.gif">
@@ -172,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          test
+          Webassembly环境配置
         </h1>
 
         <div class="post-meta-container">
@@ -183,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-06-23 11:21:53" itemprop="dateCreated datePublished" datetime="2021-06-23T11:21:53-08:00">2021-06-23</time>
+      <time title="Created: 2021-06-25 14:05:06" itemprop="dateCreated datePublished" datetime="2021-06-25T14:05:06-08:00">2021-06-25</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
@@ -203,7 +204,22 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>test</p>
+        <h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><ul>
+<li>git</li>
+<li>CMake</li>
+<li>系统编译工具 （VS、GCC、Xcode）</li>
+<li>python 2.7.*</li>
+</ul>
+<h3 id="编译-Emscripten"><a href="#编译-Emscripten" class="headerlink" title="编译 Emscripten"></a>编译 Emscripten</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/juj/emsdk.git</span><br><span class="line">$ cd emsdk</span><br><span class="line">$ ./emsdk install sdk-incoming-64bit binaryen-master-64bit</span><br><span class="line">$ ./emsdk activate sdk-incoming-64bit binaryen-master-64bit</span><br></pre></td></tr></table></figure>
+
+<p>官方给出的命令会出问题,用下面的命令代替（加 python 是强制使用 python2.7 运行,然而第二条命令加 python 编译会出错）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ python ./emsdk install latest</span><br><span class="line">$ ./emsdk activate latest</span><br></pre></td></tr></table></figure>
+
+<p>最后会提示你添加环境变量</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>最后写一个 hello.c 测试一下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hello.c -s WASM=1 -o hello.html</span><br><span class="line">emrun hello.html --no_browser --port 8080</span><br></pre></td></tr></table></figure>
+
+<p>浏览器访问 8080 端口，查看运行结果</p>
 
     </div>
 
@@ -217,11 +233,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/" rel="prev" title="test">
+                  <i class="fa fa-chevron-left"></i> test
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/" rel="next" title="Webassembly环境配置">
-                  Webassembly环境配置 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
