@@ -20,23 +20,32 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"beyond009.github.io","root":"/matataki-save/","images":"/matataki-save/images","scheme":"Muse","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/matataki-save/js/config.js"></script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="ddd009&#39;s blog">
-<meta property="og:url" content="https://beyond009.github.io/matataki-save/index.html">
+<meta name="description" content="Dfinity 前端开发教程 作者:ddd009 转载请注明出处    前段时间Uniswap对某些币种的前端限制引起了很大的争议，Dfinity是一个很好的全栈去中心化解决方案，本篇教程从 dfx new helloworld 开始讲起，详细的介绍了如何在 dfinity 上进行前端开发,并讲解了如何使用官方提供的 identity 服务（identity.ic0.app)，一起来加入去中心化前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dfinity 前端开发教程">
+<meta property="og:url" content="https://beyond009.github.io/matataki-save/2021/07/Gh202107aa106da32145b6840e146a99bff34771/index.html">
 <meta property="og:site_name" content="ddd009&#39;s blog">
+<meta property="og:description" content="Dfinity 前端开发教程 作者:ddd009 转载请注明出处    前段时间Uniswap对某些币种的前端限制引起了很大的争议，Dfinity是一个很好的全栈去中心化解决方案，本篇教程从 dfx new helloworld 开始讲起，详细的介绍了如何在 dfinity 上进行前端开发,并讲解了如何使用官方提供的 identity 服务（identity.ic0.app)，一起来加入去中心化前">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/07/28/ab29e82e33ef1b0ec48d7cd939cd85a7.png">
+<meta property="og:image" content="https://ssimg.frontenduse.top/article/2021/07/28/e12edd52138904a2df31656aa950a734.png">
+<meta property="article:published_time" content="2021-07-29T05:37:18.000Z">
+<meta property="article:modified_time" content="2021-07-28T13:37:36.443Z">
 <meta property="article:author" content="ddd009">
+<meta property="article:tag" content="Dfinity">
+<meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ssimg.frontenduse.top/article/2021/07/28/ab29e82e33ef1b0ec48d7cd939cd85a7.png">
 
 
-<link rel="canonical" href="https://beyond009.github.io/matataki-save/">
+<link rel="canonical" href="https://beyond009.github.io/matataki-save/2021/07/Gh202107aa106da32145b6840e146a99bff34771/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://beyond009.github.io/matataki-save/2021/07/Gh202107aa106da32145b6840e146a99bff34771/","path":"2021/07/Gh202107aa106da32145b6840e146a99bff34771/","title":"Dfinity 前端开发教程"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>ddd009's blog</title>
+<title>Dfinity 前端开发教程 | ddd009's blog</title>
   
 
 
@@ -90,7 +99,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -103,6 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dfinity-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">Dfinity 前端开发教程</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%95%99%E7%A8%8B%E7%9B%AE%E5%BD%95"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">教程目录:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%8E-hello-world-%E5%85%A5%E6%89%8B"><span class="nav-number">1.1.</span> <span class="nav-text">从 hello world 入手</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E7%AB%AF%E8%84%9A%E6%89%8B%E6%9E%B6"><span class="nav-number">1.2.</span> <span class="nav-text">前端脚手架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E-webpack-%E9%85%8D%E7%BD%AE%E5%92%8C-dev-server"><span class="nav-number">1.3.</span> <span class="nav-text">关于 webpack 配置和 dev server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9canister"><span class="nav-number">1.4.</span> <span class="nav-text">如何调用第三方canister</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Internet-Identity-%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.5.</span> <span class="nav-text">如何使用 Internet Identity 服务</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -150,16 +160,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://beyond009.github.io/matataki-save/2021/07/Gh202107aa106da32145b6840e146a99bff34771/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -172,9 +183,9 @@
       <meta itemprop="name" content="ddd009's blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/matataki-save/2021/07/Gh202107aa106da32145b6840e146a99bff34771/" class="post-title-link" itemprop="url">Dfinity 前端开发教程</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Dfinity 前端开发教程
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -198,7 +209,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="Dfinity-前端开发教程"><a href="#Dfinity-前端开发教程" class="headerlink" title="Dfinity 前端开发教程"></a>Dfinity 前端开发教程</h3><blockquote>
+        <h3 id="Dfinity-前端开发教程"><a href="#Dfinity-前端开发教程" class="headerlink" title="Dfinity 前端开发教程"></a>Dfinity 前端开发教程</h3><blockquote>
 <p>作者:ddd009 转载请注明出处</p>
 </blockquote>
 <p>  前段时间Uniswap对某些币种的前端限制引起了很大的争议，Dfinity是一个很好的全栈去中心化解决方案，本篇教程从 dfx new helloworld 开始讲起，详细的介绍了如何在 dfinity 上进行前端开发,并讲解了如何使用官方提供的 identity 服务（identity.ic0.app)，一起来加入去中心化前端开发的世界吧！<br>阅读本文前需熟悉 dfx 开发工具的使用</p>
@@ -239,7 +250,6 @@
 <p>下面讲一下如何发起认证过的调用，前面helloworld的例子中讲过如何发起调用，不过使用的是随机生成的匿名身份。当用户完成认证后我们就能获取到他们的身份，如何使用用户的身份发起认证过的调用呢，如下，在创建agent时传入identity即可</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">handleAuthenticated</span>(<span class="params">authClient</span>) </span>&#123;</span><br><span class="line">    identity = <span class="keyword">await</span> authClient.getIdentity(); </span><br><span class="line">     <span class="keyword">const</span> agent = <span class="keyword">new</span> HttpAgent(&#123;</span><br><span class="line">       <span class="attr">identity</span>: identity,</span><br><span class="line">       <span class="attr">host</span>: <span class="string">&quot;http://localhost:8000&quot;</span>,</span><br><span class="line">     &#125;);</span><br><span class="line">    <span class="comment">//本地开发时需要获取Root Key</span></span><br><span class="line">     <span class="keyword">if</span>(process.env.NODE_ENV !== <span class="string">&quot;production&quot;</span>) <span class="keyword">await</span> agent.fetchRootKey();</span><br><span class="line">     <span class="keyword">let</span> actor = Actor.createActor(idlFactory, &#123;</span><br><span class="line">       agent,</span><br><span class="line">       <span class="attr">canisterId</span>: canisterId,</span><br><span class="line">     &#125;);</span><br><span class="line">    <span class="keyword">const</span> greeting = <span class="keyword">await</span> actor.greet(name);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-      
     </div>
 
     
@@ -247,168 +257,26 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/matataki-save/tags/Dfinity/" rel="tag"># Dfinity</a>
+              <a href="/matataki-save/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/" rel="prev" title="Webassembly环境配置">
+                  <i class="fa fa-chevron-left"></i> Webassembly环境配置
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/matataki-save/images/avatar.gif">
-      <meta itemprop="name" content="ddd009">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ddd009's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/matataki-save/2021/06/Gh202106f3d58efc8ad5fc6be600cfbb1381e5c0/" class="post-title-link" itemprop="url">Webassembly环境配置</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-25 14:05:06" itemprop="dateCreated datePublished" datetime="2021-06-25T14:05:06-08:00">2021-06-25</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-28 05:37:36" itemprop="dateModified" datetime="2021-07-28T05:37:36-08:00">2021-07-28</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><ul>
-<li>git</li>
-<li>CMake</li>
-<li>系统编译工具 （VS、GCC、Xcode）</li>
-<li>python 2.7.*</li>
-</ul>
-<h3 id="编译-Emscripten"><a href="#编译-Emscripten" class="headerlink" title="编译 Emscripten"></a>编译 Emscripten</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/juj/emsdk.git</span><br><span class="line">$ cd emsdk</span><br><span class="line">$ ./emsdk install sdk-incoming-64bit binaryen-master-64bit</span><br><span class="line">$ ./emsdk activate sdk-incoming-64bit binaryen-master-64bit</span><br></pre></td></tr></table></figure>
-
-<p>官方给出的命令会出问题,用下面的命令代替（加 python 是强制使用 python2.7 运行,然而第二条命令加 python 编译会出错）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ python ./emsdk install latest</span><br><span class="line">$ ./emsdk activate latest</span><br></pre></td></tr></table></figure>
-
-<p>最后会提示你添加环境变量</p>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>最后写一个 hello.c 测试一下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hello.c -s WASM=1 -o hello.html</span><br><span class="line">emrun hello.html --no_browser --port 8080</span><br></pre></td></tr></table></figure>
-
-<p>浏览器访问 8080 端口，查看运行结果</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://beyond009.github.io/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/matataki-save/images/avatar.gif">
-      <meta itemprop="name" content="ddd009">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ddd009's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/matataki-save/2021/06/Gh202106404a4bc96ec60e850d06328661f586b2/" class="post-title-link" itemprop="url">test</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-23 11:21:53" itemprop="dateCreated datePublished" datetime="2021-06-23T11:21:53-08:00">2021-06-23</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-28 05:37:36" itemprop="dateModified" datetime="2021-07-28T05:37:36-08:00">2021-07-28</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>test</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
