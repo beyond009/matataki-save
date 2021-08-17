@@ -6,6 +6,7 @@ author: ddd009
 language: en
 timezone: Etc/GMT+8
 url: https://beyond009.github.io/
+root: /
 permalink: :title/
 permalink_defaults: null
 pretty_urls:
